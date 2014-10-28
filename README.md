@@ -33,7 +33,7 @@ optional arguments:
                        by APIC)
 
 # Example
-
+<pre>
 [user@localhost ~]$ ./aci-fault-doc.py http://172.18.118.5 --user admin
 Password: 
 
@@ -82,7 +82,7 @@ FAULT: F0546 - 3 occurrences
             Port is down, reason:sfp-missing, used by:discovery
 
 ...remaining output ommitted
-
+</pre>
 # License
 
 Copyright (C) 2014 Cisco Systems Inc.
