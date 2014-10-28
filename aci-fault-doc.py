@@ -132,4 +132,4 @@ if __name__ == '__main__':
     if args.json is not None:
         with open(args.json) as fp:
             apic_faults = json.load(fp)['imdata']
-    main(apicUrl=args.apicUrl, name=args.username, pwd=args.pwd, documentation=True, apic_faults=None)
+    main(apicUrl=args.apicUrl, name=args.username, pwd=args.pwd, documentation=True, apic_faults=apic_faults)
