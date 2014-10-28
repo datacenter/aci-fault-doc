@@ -16,7 +16,7 @@ Required
 # Usage
 Script requires access to APIC to query current faultInst MOs and documentation.  It also provides an option to pull fault documentation for a saved faultInst json query (/api/class/faultInst.json).
 
-
+<pre>
 usage: aci-fault-doc.py [-h] [--username USERNAME] [--pwd PWD] [--json JSON]
                         apicUrl
 
@@ -31,7 +31,7 @@ optional arguments:
   --pwd PWD            password
   --json JSON          load faults from json file (expects full json response
                        by APIC)
-
+</pre>
 # Example
 <pre>
 [user@localhost ~]$ ./aci-fault-doc.py http://172.18.118.5 --user admin
