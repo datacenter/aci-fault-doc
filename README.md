@@ -10,7 +10,8 @@ Script to query APIC for faults and summarize corrective actions based on fault 
 ## Environment
 Required
 * Python 2.7+
-* Beautiful Soup 4 (bs4)
+* Beautiful Soup 4 (bs4 - 4.3.2)
+* html5lib (0.999)
 
 
 # Usage

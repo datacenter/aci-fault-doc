@@ -28,7 +28,7 @@ def getFaultDocumentation(session, apicUrl, faults):
     ''' retrieves fault documentation from APIC using requests sessions '''
     docUrl = '/doc/html/'
     faultUrl = 'FaultMessages.html'
-    faultsHtml = BeautifulSoup(session.get(apicUrl + docUrl + faultUrl, verify=False).content)
+    faultsHtml = BeautifulSoup(session.get(apicUrl + docUrl + faultUrl, verify=False).content, 'html5lib')
     last_fault_code = None
     for fault_row in filter(lambda x: x.name == 'tr', faultsHtml.table.tbody.children):
         columns = filter(lambda x: x.name == 'td', fault_row.contents)
